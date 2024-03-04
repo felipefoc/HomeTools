@@ -15,4 +15,4 @@ services:
       - ./frontend:/app
     ports:
       - "8081:8080"
-    command: npm run dev
+    command: sh -c "cd /app/ && npm install && npm run dev"
