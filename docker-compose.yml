@@ -12,7 +12,7 @@ services:
   frontend:
     build: ./frontend
     volumes:
-      - './frontend:/app'
+      - ./frontend:/app
     ports:
       - "8081:8080"
     command: npm run dev
